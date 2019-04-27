@@ -32,8 +32,10 @@ extension LoginViewController {
         
         if userNameTextField.text == kUserName, passwordTextField.text == kPassword {
             resultViewController.resultLabelTextString = "Hello \(kUserName)"
+            resultViewController.view.backgroundColor = #colorLiteral(red: 0.06466688961, green: 1, blue: 0.2324822545, alpha: 1)
         } else {
             resultViewController.resultLabelTextString = "Wrong user name or password"
+            resultViewController.view.backgroundColor = #colorLiteral(red: 1, green: 0.3555517495, blue: 0.351701051, alpha: 1)
         }
     }
 }
@@ -49,6 +51,7 @@ extension LoginViewController {
         
         present(resultViewController, animated: true, completion: nil)
         resultViewController.resultLabel.text = self.getTextBy(button: sender)
+        resultViewController.view.backgroundColor = #colorLiteral(red: 0.9484711289, green: 0.8920820355, blue: 0.2674261034, alpha: 1)
     }
     
     func getTextBy(button: UIButton) -> String {

@@ -39,6 +39,9 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Sp-Ax-P0W"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lRK-GZ-p9Y">
                                         <rect key="frame" x="0.0" y="124" width="232" height="27"/>
@@ -81,7 +84,7 @@
                         <outlet property="stackView" destination="ywa-YD-QKA" id="pRb-SE-mfg"/>
                         <outlet property="stackViewVerticallyConstraint" destination="FQQ-4W-T7d" id="JHR-g7-lS6"/>
                         <outlet property="userNameTextField" destination="o9W-Yj-B3s" id="cAV-CR-Z5b"/>
-                        <segue destination="SDa-DO-pqT" kind="show" identifier="segueToResultViewController" id="ZSE-ta-2GV"/>
+                        <segue destination="SDa-DO-pqT" kind="presentation" identifier="segueToResultViewController" id="ZSE-ta-2GV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
